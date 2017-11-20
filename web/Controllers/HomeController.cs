@@ -24,7 +24,6 @@ namespace TelePresence.Controllers
 
         public IActionResult Index()
         {
-
             return View();
         }
 
