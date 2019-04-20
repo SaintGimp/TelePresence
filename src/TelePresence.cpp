@@ -1,5 +1,11 @@
+#include "application.h"
+#line 1 "/Users/elee/Projects/SaintGimp/TelePresence/src/TelePresence.ino"
 #include <Stepper.h>
 
+void setup();
+void loop();
+int moveMotor(String command);
+#line 3 "/Users/elee/Projects/SaintGimp/TelePresence/src/TelePresence.ino"
 int in1Pin = D0;
 int in2Pin = D1;
 int in3Pin = D2;
@@ -17,7 +23,6 @@ void setup() {
 
    Particle.function("move", moveMotor);
    // This is saying that when we ask the cloud for the function "move", it will employ the function moveMotor() from this app.
-  
 }
 
 void loop() {
